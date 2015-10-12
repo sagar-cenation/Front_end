@@ -1,0 +1,115 @@
+body{
+	background-image: url(code.jpg);
+	height: 100%;
+	width: 100%;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position: relative;
+	font-family: sans-serif;
+	left: 0;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	float: left;
+	right: 20px;
+	position: relative;
+	margin:0px;
+}
+/*  ........Navigation Bar........ */
+#navbar{
+	background-color:gray;
+	/*background: -webkit-linear-gradient(gray,black);
+    background: -o-linear-gradient(gray,black);
+    background: -moz-linear-gradient(gray,black); 
+    background: linear-gradient(gray,black);*/
+	text-align: center;
+	
+	
+}
+
+#navbar > li{
+	position: relative;
+	display: inline-block;
+	padding: 20px 70px 20px 70px;
+	width:120px;
+}
+#navBar >li:hover{
+	background-color:#595959;
+}
+
+#navbar li a{
+	text-decoration: none;
+	color:white;
+}
+.move{
+	width: 20%;
+    height: .5%;
+    margin-top: 1.7%;
+    background: white;
+    display: block;
+    position: fixed;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+
+}
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 100%;}
+}
+
+
+#navbar li > ul{
+	list-style: none;
+	position: absolute;
+	left:0;
+	top: 61px;
+	width: 100%;
+	opacity:0;
+
+}
+#navBar li:hover > ul {
+	visibility:visible;
+	opacity:1;
+}
+
+#navBar li > ul > a {
+	display:block;
+	padding: 20px 80px 20px 80px;
+	background-color:#868686;
+	opacity:0.8;
+	background:rgba(103,103,103,0.90);
+
+}
+
+#navBar li > ul > a:hover {
+	color:yellow;
+	background-color:#4F4F4F;
+}
+#navBar li > ul > a:visited {
+	color:red;
+	background-color:#4F4F4F;
+}
+.para{
+	color:white;
+	max-width:57%;
+	margin-top:10%;
+	margin-left:5%;
+}
+.para2{
+	color:white;
+	max-width:57%;
+	margin-top:5%;
+	margin-left:5%;
+}
+.para> p:second-child:first-line { text-decoration: underline; }
+.para > p:first-child:first-letter { font-size: 100px; }
+
